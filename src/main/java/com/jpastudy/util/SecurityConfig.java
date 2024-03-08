@@ -2,7 +2,6 @@ package com.jpastudy.util;
 
 import jakarta.servlet.DispatcherType;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.CustomAutowireConfigurer;
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
