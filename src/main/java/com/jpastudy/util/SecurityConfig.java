@@ -22,7 +22,7 @@ public class SecurityConfig {
 
     private static final RequestMatcher AUTH_WHITELIST = new OrRequestMatcher(
             PathRequest.toStaticResources().atCommonLocations(),
-            new AntPathRequestMatcher("/")
+            new AntPathRequestMatcher("/**")
     );
 
     @Bean
