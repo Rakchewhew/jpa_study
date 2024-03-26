@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        button { margin-left : 5px;}
+        div { margin-bottom: 10px;}
+        form button {margin-bottom: 10px;}
+    </style>
 </head>
 <body>
+    <form th:action="@{/login}" method="post">
+        <div>
+            <div>아이디</div>
+            <input type="text">
+        </div>
+        <div>
+            <div>비밀번호</div>
+            <input type="password">
+        </div>
+        <div th:if="${error}" class="alert alert-danger" role="alert">
+            로그인 실패 : <span th:text="${exception}"></span>
+        </div>
+        <button type="submit">로그인</button>
+    </form>
     <div>
         <button>카카오 로그인</button>
         <button>네이버 로그인</button>
