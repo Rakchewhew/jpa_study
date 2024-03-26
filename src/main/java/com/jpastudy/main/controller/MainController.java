@@ -1,4 +1,4 @@
-package com.jpastudy.controller;
+package com.jpastudy.main.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

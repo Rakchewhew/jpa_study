@@ -1,4 +1,4 @@
-package com.jpastudy.util;
+package com.jpastudy.global.config;
 
 import jakarta.servlet.DispatcherType;
 import lombok.RequiredArgsConstructor;
