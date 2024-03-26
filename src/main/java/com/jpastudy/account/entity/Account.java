@@ -20,7 +20,7 @@ public class Account extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "account_id")
-    private String id;
+    private Long id;
     private String name;
 
     @Column(unique = true)
